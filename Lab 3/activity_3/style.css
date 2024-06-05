@@ -1,0 +1,55 @@
+
+
+body {
+    font-family: "Open Sans";
+}
+
+#main {
+    margin: 10px 20px;
+}
+
+text.label {
+    text-anchor: middle;
+    font-size: 11px;
+    fill: #555;
+    font-family: sans-serif;
+}
+
+.axis text {
+    fill: #555;
+}
+
+.axis line,
+.axis path {
+    stroke: #555;
+}
+
+text.title {
+    text-anchor: middle;
+    font-size: 14px;
+    fill: #333;
+}
+
+circle {
+    fill: lightseagreen;
+    opacity: .7;
+}
+
+g.baseball text.label {
+    font-size: 8px;
+    font-weight: 700;
+    visibility: hidden;
+}
+
+g.baseball:hover text.label {
+    visibility: visible;
+}
+
+g.baseball circle {
+    fill: black;
+    opacity: 0;
+}
+
+g.baseball:hover circle {
+    opacity: 1;
+}
