@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Activity 4 - Daksh Sharma</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="d3-tip.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<style>
+        body {
+            justify-content: space-around;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #container,
+        div {
+            width: 50%;
+        }
+
+        #scatterplot {
+    	float: left;
+		}
+
+		#barchart {
+    	float: right;
+		}
+
+		#xdropdown {
+    	float: left;
+		}
+
+        svg {
+            border: 1px solid #777;
+            width: 100%;
+            height: 100%;
+        }
+
+
+
+    </style>
+<body>
+    <div id="scatterplot"></div>
+    <div id="barchart"></div>
+    <div class="Xdropdown">
+        <b>X-Axis Selections</b>
+        <select id="xdropdown">
+            <option value="cylinders">cylinders</option>
+            <option value="economy (mpg)">economy (mpg)</option>
+            <option value="displacement (cc)">displacement (cc)</option>
+            <option value="power (hp)">power (hp)</option>
+            <option value="weight (lb)">weight (lb)</option>
+            <option value="0-60 mph (s)">0-60 mph (s)</option>
+            <option value="year">year</option>
+        </select>
+    </div>
+    <div class="Ydropdown">
+        <b>Y-Axis Selections</b>
+        <select id="ydropdown">
+            <option value="power (hp)">power (hp)</option>
+            <option value="cylinders">cylinders</option>
+            <option value="economy (mpg)">economy (mpg)</option>
+            <option value="displacement (cc)">displacement (cc)</option>
+            <option value="weight (lb)">weight (lb)</option>
+            <option value="0-60 mph (s)">0-60 mph (s)</option>
+            <option value="year">year</option>
+        </select>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
